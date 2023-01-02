@@ -1,24 +1,5 @@
-<style>
-  .arjs-loader {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .arjs-loader div {
-    text-align: center;
-    font-size: 1.25em;
-    color: white;
-  }
-</style>
-
+<!DOCTYPE html>
+<html lang="ja">
 <head>
   <!-- A-Frameを読み込む -->
   <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
@@ -27,10 +8,6 @@
 </head>
 
 <body style="margin : 0px; overflow: hidden;">
-  <!-- minimal loader shown until image descriptors are loaded -->
-  <div class="arjs-loader">
-    <div>Loading, please wait...</div>
-  </div>
   <a-scene vr-mode-ui="enabled: false;">
     <a-marker type="pattern" url="marker.patt">
       <a-entity gltf-model="https://findthevision.github.io/aki-HBD-2023/model/logo.gltf">
@@ -39,3 +16,4 @@
     <a-entity camera></a-entity>
   </a-scene>
 </body>
+</html>
